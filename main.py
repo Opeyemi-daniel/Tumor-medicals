@@ -24,7 +24,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'something_secret_i_guess'
 db = SQLAlchemy(app)
 
-load_dotenv()
+
 new_model = load_model('./effnet.h5')
 
 # token required
