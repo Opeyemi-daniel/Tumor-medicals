@@ -1,9 +1,9 @@
 from flask import Flask, jsonify, request, make_response
 import jwt
 
-import tensorflow as tf
+# import tensorflow as tf
 import numpy as np
-from keras.models import load_model
+from tensorflow import keras.models.load_model
 import cv2
 from PIL import Image
 
@@ -24,7 +24,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'something_secret_i_guess'
 db = SQLAlchemy(app)
 
-
+load_dotenv()
 new_model = load_model('./effnet.h5')
 
 # token required
