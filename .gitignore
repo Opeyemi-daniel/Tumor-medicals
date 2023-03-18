@@ -1,6 +1,5 @@
 .env
 venv/
-madicals.db
 .vscode/
 .ebextensions/
 .idea/

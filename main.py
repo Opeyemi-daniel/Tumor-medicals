@@ -19,8 +19,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 app = Flask(__name__)
 
 # Connect to Database
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///madicals.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///madicals.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'something_secret_i_guess'
 db = SQLAlchemy(app)
