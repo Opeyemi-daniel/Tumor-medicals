@@ -1,14 +1,13 @@
 from flask import Flask, jsonify, request, make_response
 import jwt
 
-import tensorflow as tf
+# import tensorflow as tf
 import numpy as np
 from keras.models import load_model
 import cv2
 from PIL import Image
 
-import os
-from dotenv import load_dotenv
+
 from functools import wraps
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin
